@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <table class="table" >
+            <caption>Grocery List</caption>
+            <tbody>
+            <tr class="first_row">
+                <td colspan="4"></td>
+                <td colspan="2" class="additemtd"><button class="additem">Add Item</button></td>
+            </tr>
+            <tr class="head_row">
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th class="hidestatus">Check Status</th>
+                <th>Check Status</th>
+                <th>Edit</th>
+            </tr>
+        </tbody>
+        </table>
+
+        <form class="addItemForm">
+            <span class="closeAddItemForm">&times;</span>
+            <lable>Enter Name of Item</lable>
+            <input type="text" id="itemName" value="">
+            <span class="error errorName"></span>
+            <lable>Enter Quantity of Item</lable>
+            <input type="text" id="itemQty" value="">
+            <span class="error errorQty"></span>
+            <lable>Enter Price of Item</lable>
+            <input type="text" id="itemPrice" value="">
+            <span class="error errorPrice"></span>
+            <lable>Enter Check status of Item</lable>
+            <input type="Checkbox" id="itemCheckStatus" value="">
+            <span class="error errorStatus"></span>
+            <button class="addToList" type="submit">Add Item</button>
+        </form>
+
+        <form class="updateItemForm">
+            <span class="closeAddItemForm">&times;</span>
+            <lable>Update Name of Item</lable>
+            <input type="text" id="updateitemName" value="">
+            <span class="error errorName"></span>
+            <lable>Update Quantity of Item</lable>
+            <input type="text" id="updateitemQty" value="">
+            <span class="error errorQty"></span>
+            <lable>Update Price of Item</lable>
+            <input type="text" id="updateitemPrice" value="">
+            <span class="error errorPrice"></span>
+            <lable>Update Check status of Item</lable>
+            <input type="Checkbox" id="updateitemCheckStatus" value="">
+            <span class="error errorStatus"></span>
+            <button class="updateToList" type="submit">Update Item</button>
+        </form>
+    </div>
+
+    <script typr="text/javascript" src="index.js"></script>
+</body>
+</html>
